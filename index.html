@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+
+            <img src="images/logo-SurPlus.png" alt="Logo-SurPlus">
+
+            <nav>
+                <ul>
+                    <li><a href="#sinscrire">A-Propos</a></li>
+                    <li><a href="#sinscrire">S'inscrire</a></li>
+                    <li><a href="#commander">Commander</a></li>
+                    <li><a href="#annonce">Déposer une annonce</a></li>
+                    <li><a href="#espaceClient">Espace Client</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+
+            <section class="search-form-grid">
+
+                <form class="form-main" action="recherche" method="post">
+                    <h2 class="h2form">Votre Recherche</h2>
+
+                    <div>
+                        <label for="lieux">Lieux:</label>
+                        <input type="text" id="lieux" placeholder="code postal ou ville">
+                    </div>
+                    <div>
+                        <label for="category">Quelles catégorie ?</label>
+                        <select name="category" id="category">
+
+                            <option value="0">...</option>
+                            <option value="q">Viandes, oeufs, volaille, poissons</option>
+                            <option value="q">fruits et légumes</option>
+                            <option value="g">pâtisserie et viennoiseries</option>
+                            <option value="b">Boisson</option>
+                            <option value="b">Plats préparés</option>
+                            <option value="b">Autres</option>
+
+                        </select>
+                    </div>
+                </form>
+
+                <img class="voisins" src="images/voisins.png" alt="voisins">
+
+            </section>
+
+            <section class="carousel">
+                <h1>Ils partagent leur surplus</h1>
+                <div class="carousel-inner">
+                    <img src="images/drink.jpeg" alt="beer">
+                    <img src="images/fruit.jpeg" alt="fruits">
+                    <img src="images/meat.jpeg" alt="meat">
+                    <img src="images/pastry.jpeg" alt="pastry">
+                    <img src="images/ragout.jpeg" alt="ragout">
+                    <img src="images/salmon.jpeg" alt="salmon">
+                    <img src="images/vegetables.jpeg" alt="vegetables">
+                </div>
+
+
+            </section>
+
+        </main>
+    </div>
+
+
+
+</body>
+
+
+</html>

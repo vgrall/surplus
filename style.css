@@ -1,0 +1,171 @@
+/* ************************************* */
+/* GENERAL*/
+
+body, *{
+    box-sizing: border-box;
+    margin: 0;
+	font-size: .5rem;
+}
+
+.container {
+	width: 1200px;
+	margin: auto;
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+h1{
+    font-size: 50px;
+    color:#0E1559;
+}
+
+h2, h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+  
+}
+
+/* ************************************* */
+/* HEADER */
+
+header {
+	text-align: left;
+}
+
+
+nav ul {
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+	background-color: #FCDDA8;
+	padding: .5rem 0;
+    margin-top: -50px;
+}
+
+nav a {
+	color: #0E1559;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 2.2rem;
+	display: inline-block;
+	padding: 1rem 2.5rem;
+}
+
+nav a:hover, 
+nav a:focus {
+	color: #0E1559;
+    /* ajout d'un outline au passage de la souris en pseudo class */
+    outline: 2px solid #0E1559;
+}
+
+/* ************************************* */
+/* SEARCH-FORM MAIN - PAGE D'ACCUEIL*/
+
+.search-form-grid{
+
+    /* bloc qui va contenir le formulaire ET l'image */
+    background-color: #0E1559;
+  
+    padding-top: 2rem;
+  justify-items: center;
+    color:white;
+    display: grid;
+
+    /* création d'un grid de 2 colonnes */
+    grid-template-columns: 1fr 1fr; 
+   
+}
+
+.form-main{
+   /* bloc qui entoure le formulaire */
+    border: 2px solid #FCDDA8;
+    border-radius: 10px;
+
+    /* Permet d'aligner le contenu dans le bloc*/
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 4rem 3rem 0 3rem; 
+    margin: auto;
+
+}
+
+label{
+    color: white;
+    font-size: 2.2rem;
+    line-height: 4rem;
+   
+  
+}
+
+input, select{
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    margin-bottom: 8rem;
+    font-size: 2rem;
+
+}
+
+
+
+.voisins{
+    grid-column: 2;
+    margin-left: 7rem;
+    width: 500px;
+    
+}
+
+.h2form{
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+
+/* ************************************* */
+/* SECTION CARROUSSEL*/
+
+h1{
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.carousel {
+    width: 100%;
+    height: 300px;
+    /* overflow assure que que tout ce qui dépasse la largeur est masqué */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-inner {
+    display: flex;
+
+    width: 300%;
+
+    height: 100%;
+    /* animation: slide 120s infinite; */
+    animation: carousel-scroll 120s linear infinite;
+
+  }
+  
+  .carousel-inner img {
+    width: 33.33%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @keyframes carousel-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    33.33% {
+      transform: translateX(100%);
+    }
+    66.66% {
+      transform: translateX(200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
