@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <!-- balise qui initie la largeur de l'écran initial (taille rendue) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap" rel="stylesheet">
     <title>Accueil</title>
 </head>
 
@@ -16,7 +20,7 @@
 
             <nav>
                 <ul>
-                    <li><a href="#sinscrire">A-Propos</a></li>
+                    <li><a href="#apropos">A-Propos</a></li>
                     <li><a href="#sinscrire">S'inscrire</a></li>
                     <li><a href="#commander">Commander</a></li>
                     <li><a href="#annonce">Déposer une annonce</a></li>
@@ -51,11 +55,16 @@
                             <option value="b">Autres</option>
 
                         </select>
+                        <div class="container-btn">
+                            <input class="btn-form" type="submit" value="Rechercher">
+                        </div>
+
                     </div>
+
                 </form>
-
-                <img class="voisins" src="images/voisins.png" alt="voisins">
-
+                <div class="imageVoisins">
+                    <img class="voisins" src="images/voisins.png" alt="voisins">
+                </div>
             </section>
 
             <section class="carousel">
@@ -69,7 +78,6 @@
                     <img src="images/salmon.jpeg" alt="salmon">
                     <img src="images/vegetables.jpeg" alt="vegetables">
                 </div>
-
 
             </section>
 
